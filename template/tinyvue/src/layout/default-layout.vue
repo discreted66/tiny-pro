@@ -18,20 +18,6 @@
         </tiny-layout>
       </template>
       <tiny-layout class="layout-content">
-        <Tabs
-          :key="tabsRefreshKey"
-          v-model="currentTabName"
-          with-close
-          @click="onClick"
-          @close="onClose"
-        >
-          <tab-item
-            v-for="(history, idx) of tabsHistory"
-            :key="idx"
-            :title="t(history.name)"
-            :name="history.link"
-          ></tab-item>
-        </Tabs>
         <PageLayout />
       </tiny-layout>
       <template #footer>
@@ -281,7 +267,6 @@
 
   .layout :deep(.layout-content) {
     height: 100%;
-    padding: 0 10px;
     overflow: hidden;
   }
 

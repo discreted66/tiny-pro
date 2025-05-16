@@ -11,7 +11,7 @@ import '@/api/interceptor';
 import '@/assets/style/global.less';
 import config from '../hwc-exports.json';
 import chinaMap from './assets/china.json';
-import '@opentiny/vue-search-box/index.css';
+import '@opentiny/vue-search-box/dist/index.css';
 
 registerMap('china', chinaMap as any);
 const app = createApp(App);
