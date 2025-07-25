@@ -249,7 +249,6 @@
     Popconfirm as TinyPopconfirm,
   } from '@opentiny/vue';
   import { iconEditor, iconDel, iconRefresh, iconSetting } from '@opentiny/vue-icon';
-  import TinySearchBox from '@opentiny/vue-search-box';
   import {
     queryEmployeeList,
     deleteEmployee,
